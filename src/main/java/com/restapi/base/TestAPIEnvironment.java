@@ -4,10 +4,10 @@ public class TestAPIEnvironment {
 
 	private static final String BASE_URI="http://localhost:8084";
 	private static final String GET_ALL_PROJECT="/projects";
-	private static final String GET_SINGLE_PROJECT="/";
-	private static final String CREATE_PROJECT="/";
-	private static final String UPDATE_PROJECT="/";
-	private static final String DELETE_PROJECT="/";
+	private static final String GET_SINGLE_PROJECT="/projects/{projectId}";
+	private static final String CREATE_PROJECT="/addProject";
+	private static final String UPDATE_PROJECT="/projects/{projectId}";
+	private static final String DELETE_PROJECT="/projects/{projectId}";
 	public static String getBaseUri() {
 		return BASE_URI;
 	}

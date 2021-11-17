@@ -1,13 +1,5 @@
 package com.restassuredframework.desrialize;
-/*{
-        "projectId": "TY_PROJ_1802",
-        "projectName": "TMRO APP",
-        "teamSize": 5,
-        "createdBy": "NitheshHS",
-        "createdOn": "18/02/2021",
-        "status": "completed"
-    }
- */
+
 public class Projects {
 	
 	private String projectId;
