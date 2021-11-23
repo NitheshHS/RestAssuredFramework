@@ -16,6 +16,7 @@ public class DataBaseUtility {
 			Driver driver=new Driver();
 			DriverManager.registerDriver(driver);
 			connection = DriverManager.getConnection(database.getDatabaseURL()+database.getDatabaseName(), database.getDatabaseUsername(), database.getDataBasePassword());
+		LoggerClass.getLogger().info("successfully connected to database");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -26,25 +27,43 @@ public class DataBaseUtility {
 	public static void closeDataBaseConnection() {
 		try {
 			connection.close();
+			LoggerClass.getLogger().info("database connection closed");
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
 	
 	public static boolean executeQuery(String selectQuery, String dbcolumnName, String jsonData)  {
+		boolean flag=false;
 		try {
+			LoggerClass.getLogger().info("Executing query: "+selectQuery+" fetching column: "+dbcolumnName+" expected data: "+jsonData);
 			Statement statement = connection.createStatement();
 			ResultSet result = statement.executeQuery(selectQuery);
 			while(result.next()) {
 				String data=result.getString(dbcolumnName);
-				if(data.equals(jsonData)) {
-					return true;
+				if(data.equals(jsonData) && data!=null) {
+					flag = true;
+					break;
 				}
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		return false;
+		return flag;
+	}
+
+	public static void getDBColumnData(String query){
+		try {
+			Statement statement = connection.createStatement();
+
+			ResultSet result = statement.executeQuery(query);
+			while(result.next()){
+				 result.getString(1);
+			}
+		} catch (SQLException throwables) {
+			throwables.printStackTrace();
+		}
+
 	}
 
 }

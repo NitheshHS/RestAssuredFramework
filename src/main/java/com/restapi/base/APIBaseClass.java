@@ -5,19 +5,21 @@ import org.apache.log4j.PropertyConfigurator;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import javax.xml.crypto.Data;
 
 
 public class APIBaseClass {
 	
-	public Logger log;
+
 	@BeforeSuite
 	public void configBS() {
-		
+		LoggerClass.getLogger().info("Connecting to database");
+		DataBaseUtility.getDataBaseConnection();
 	}
 	
 	@AfterSuite
 	public void configAS() {
-	
+		DataBaseUtility.closeDataBaseConnection();
 	}
 	
 

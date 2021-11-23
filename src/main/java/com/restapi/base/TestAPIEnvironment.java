@@ -2,7 +2,7 @@ package com.restapi.base;
 
 public class TestAPIEnvironment {
 
-	private static final String BASE_URI="http://localhost:8084";
+	private static final String BASE_URI="http://localhost:8085";
 	private static final String GET_ALL_PROJECT="/projects";
 	private static final String GET_SINGLE_PROJECT="/projects/{projectId}";
 	private static final String CREATE_PROJECT="/addProject";

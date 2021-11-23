@@ -47,4 +47,14 @@ public class Project {
     public void setTeamSize(Integer teamSize) {
         this.teamSize = teamSize;
     }
+
+    @Override
+    public String toString() {
+        return "Project{" +
+                "createdBy='" + createdBy + '\'' +
+                ", projectName='" + projectName + '\'' +
+                ", status='" + status + '\'' +
+                ", teamSize=" + teamSize +
+                '}';
+    }
 }

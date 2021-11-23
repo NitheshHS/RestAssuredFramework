@@ -33,7 +33,7 @@ public class RequestUtil
 
 	@Step("authenticated with username {username} and password {password} payload: {body} url: {URL}")
 	public static Response createNewProject(String username, String password,Object body,String URL) {
-		LoggerClass.getLogger().info("username: "+username+" password: "+password+" Payload: "+body.toString()+""
+		LoggerClass.getLogger().info("username: "+username+" password: "+password+" Payload: "+body+""
 				+ " URL: "+URL);
 		Response response=RestAssured.given()
 			.contentType(ContentType.JSON)

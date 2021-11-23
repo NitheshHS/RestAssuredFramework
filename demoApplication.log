@@ -620,3 +620,782 @@
 [main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38732372
 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@515f4131 URL: http://localhost:8084/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8084
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 92[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8084[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 92
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8084
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"RestAPIFramework-123","status":"OnGoing","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Wed, 17 Nov 2021 15:26:03 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Wed, 17 Nov 2021 15:26:03 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9e[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"msg":"Successfully Added","createdBy":"Nithesh","projectName":"RestAPIFramework-123","projectId":"TY_PROJ_4602","createdOn":"17/11/2021","status":"OnGoing"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@aca2fc3
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@515f4131 URL: http://localhost:8084/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8084
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8084
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 79[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8084[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 79
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8084
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"RestAPI","status":"OnGoing","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Wed, 17 Nov 2021 15:27:17 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Wed, 17 Nov 2021 15:27:17 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "91[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"msg":"Successfully Added","createdBy":"Nithesh","projectName":"RestAPI","projectId":"TY_PROJ_4603","createdOn":"17/11/2021","status":"OnGoing"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@639cb788
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@4c5204af URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 79[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 79
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"RestAPI","status":"OnGoing","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 10:59:31 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 10:59:31 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "96[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T10:59:31.660+0000","status":409,"error":"Conflict","message":"The Project Name :RestAPI Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6c6c2a73
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@1c5c616f URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 79[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 79
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"RestAPI","status":"OnGoing","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:00:52 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:00:52 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "96[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:00:52.552+0000","status":409,"error":"Conflict","message":"The Project Name :RestAPI Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@50ac1249
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@161f6623 URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 201 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:06:38 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 201 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:06:38 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "98[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"msg":"Successfully Added","createdBy":"Nithesh","projectName":"APIFramework","projectId":"TY_PROJ_4802","createdOn":"18/11/2021","status":"completed"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@22ff1372
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@2287395 URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:16:06 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:16:06 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9b[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:16:06.077+0000","status":409,"error":"Conflict","message":"The Project Name :APIFramework Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@67cd84f9
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@790a251b URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:24:16 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:24:16 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9b[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:24:16.038+0000","status":409,"error":"Conflict","message":"The Project Name :APIFramework Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@12670e55
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@47af099e URL: http://localhost:8085/addProject
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@1ca3d25b URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:26:59 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:26:59 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9b[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:26:59.931+0000","status":409,"error":"Conflict","message":"The Project Name :APIFramework Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2b06681c
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@71ad3d8a URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:34:07 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:34:07 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9b[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:34:07.598+0000","status":409,"error":"Conflict","message":"The Project Name :APIFramework Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@57f2e67
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: com.restapi.serialize.Project@71ad3d8a URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: ignoreCookies
+[main] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+[main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication  - Target auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication  - Proxy auth state: UNCHALLENGED
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Attempt 1 to execute request
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Sending request: POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.wire  -  >> "POST /addProject HTTP/1.1[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept: */*[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Content-Length: 86[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Host: localhost:8085[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Connection: Keep-Alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  >> "[\r][\n]"
+[main] DEBUG org.apache.http.headers  - >> POST /addProject HTTP/1.1
+[main] DEBUG org.apache.http.headers  - >> Accept: */*
+[main] DEBUG org.apache.http.headers  - >> Content-Type: application/json; charset=UTF-8
+[main] DEBUG org.apache.http.headers  - >> Content-Length: 86
+[main] DEBUG org.apache.http.headers  - >> Host: localhost:8085
+[main] DEBUG org.apache.http.headers  - >> Connection: Keep-Alive
+[main] DEBUG org.apache.http.headers  - >> User-Agent: Apache-HttpClient/4.5.3 (Java/1.8.0_261)
+[main] DEBUG org.apache.http.headers  - >> Accept-Encoding: gzip,deflate
+[main] DEBUG org.apache.http.wire  -  >> "{"createdBy":"Nithesh","projectName":"APIFramework","status":"completed","teamSize":1}"
+[main] DEBUG org.apache.http.wire  -  << "HTTP/1.1 409 [\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Content-Type-Options: nosniff[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-XSS-Protection: 1; mode=block[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Cache-Control: no-cache, no-store, max-age=0, must-revalidate[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Pragma: no-cache[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Expires: 0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "X-Frame-Options: DENY[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Origin[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Method[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Vary: Access-Control-Request-Headers[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Content-Type: application/json[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Transfer-Encoding: chunked[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Date: Thu, 18 Nov 2021 11:38:48 GMT[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Keep-Alive: timeout=60[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "Connection: keep-alive[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Receiving response: HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << HTTP/1.1 409 
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << X-Content-Type-Options: nosniff
+[main] DEBUG org.apache.http.headers  - << X-XSS-Protection: 1; mode=block
+[main] DEBUG org.apache.http.headers  - << Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+[main] DEBUG org.apache.http.headers  - << Pragma: no-cache
+[main] DEBUG org.apache.http.headers  - << Expires: 0
+[main] DEBUG org.apache.http.headers  - << X-Frame-Options: DENY
+[main] DEBUG org.apache.http.headers  - << Vary: Origin
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Method
+[main] DEBUG org.apache.http.headers  - << Vary: Access-Control-Request-Headers
+[main] DEBUG org.apache.http.headers  - << Content-Type: application/json
+[main] DEBUG org.apache.http.headers  - << Transfer-Encoding: chunked
+[main] DEBUG org.apache.http.headers  - << Date: Thu, 18 Nov 2021 11:38:48 GMT
+[main] DEBUG org.apache.http.headers  - << Keep-Alive: timeout=60
+[main] DEBUG org.apache.http.headers  - << Connection: keep-alive
+[main] DEBUG org.apache.http.impl.client.DefaultHttpClient  - Connection can be kept alive for 60000 MILLISECONDS
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsing response as: application/json
+[main] DEBUG io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder  - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+[main] DEBUG org.apache.http.wire  -  << "9b[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "{"timestamp":"2021-11-18T11:38:48.153+0000","status":409,"error":"Conflict","message":"The Project Name :APIFramework Already Exists","path":"/addProject"}"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "0[\r][\n]"
+[main] DEBUG org.apache.http.wire  -  << "[\r][\n]"
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@727453a3
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Connection can be kept alive for 60000 MILLISECONDS
+[main] INFO  com.restapi.base.LoggerClass  - Executing query: select * from project fetching column: project_name expected data: APIFramework
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: Project{createdBy='Nithesh', projectName='APIFramework', status='completed', teamSize=1} URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connect to localhost:8085 timed out. Connection will be retried using another IP address
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@6181bc4a closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@6181bc4a shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@70485aa
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
+[main] INFO  com.restapi.base.LoggerClass  - Connecting to database
+[main] INFO  com.restapi.base.LoggerClass  - successfully connected to database
+[main] INFO  com.restapi.base.LoggerClass  - Payload: Project{createdBy='Nithesh', projectName='APIFramework', status='completed', teamSize=1} URL: http://localhost:8085/addProject
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Get connection for route {}->http://localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connect to localhost:8085 timed out. Connection will be retried using another IP address
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator  - Connecting to localhost:8085
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@208f7165 closed
+[main] DEBUG org.apache.http.impl.conn.DefaultClientConnection  - Connection org.apache.http.impl.conn.DefaultClientConnection@208f7165 shut down
+[main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager  - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@a0d875d
+[main] INFO  com.restapi.base.LoggerClass  - database connection closed
